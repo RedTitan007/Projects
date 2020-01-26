@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+	
+		
+		
+		<title>Sujith weather App</title>
+
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="style.css">
+		
+		<!--[if lt IE 9]>
+		<script src="js/ie-support/html5.js"></script>
+		<script src="js/ie-support/respond.js"></script>
+		<![endif]-->
+
+	</head>
+
+
+	<body>
+		
+		<div class="site-content">
+			<div class="site-header">
+				<div class="container">
+					<a href="index.html" class="branding">
+						<img src="images/logo.png" alt="" class="logo">
+						<div class="logo-type">
+							<h1 class="site-title">VoiceBasedWeatherForecast</h1>
+							<small class="site-description">Come for the weather....stay for the experience</small>
+						</div>
+					</a>
+
+					<!-- Default snippet for navigation -->
+                    <div class="main-navigation">
+						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+						<ul class="menu">
+							<li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
+							<li class="menu-item"><a href="news.html">News</a></li>
+							<li class="menu-item"><a href="live-cameras.html">Live cameras</a></li>
+							<li class="menu-item"><a href="photos.html">Photos</a></li>
+							<li class="menu-item"><a href="contact.html">Contact</a></li>
+						</ul> <!-- .menu -->
+					</div> <!-- .main-navigation -->
+
+					<div class="mobile-navigation"></div>
+				</div>
+            </div> <!-- .site-header -->
+            
+            <div class="hero" > <!-- check about this background -->
+				<div class="container">
+					<form action="#" class="find-location">
+						<input type="text" class="inputValue" placeholder="Find your location...">
+						<input type="submit" value="Submit" class="button">
+					</form>
+                </div>
+                
+			</div>
+				<div class="container">
+					<div class="forecast-container">
+                        <div class="app-title">
+                            <p>Weather</p>
+                        </div>
+                        <div class="weather-icon">
+                            <img src="images/cloud.png" alt="">
+                        </div>
+                        <div class="temperature-value">
+                            <p>- °<span>C</span></p>
+                        </div>
+                        <div class="temperature-description">
+                            <p> - </p>
+                        </div>
+                        <div class="location">
+                            <p>-</p>
+                        </div>
+                </div>
+                </div>          
+		</div>
+		
+
+		<script src="appcode.js"></script>
+	</body>
+
+</html>

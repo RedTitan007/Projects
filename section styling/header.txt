@@ -1,0 +1,238 @@
+html {
+    background: #fff;
+    color: #000;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+ }
+ *, *:before, *:after {
+    box-sizing: border-box;
+ }
+ html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+ }
+ body {
+    margin: 0;
+ }
+ a {
+    background: transparent; 
+}
+a:focus 
+{
+outline: thin dotted; 
+}
+a:hover, a:active 
+{
+     outline: 0; 
+}
+
+img {
+    border: 0; 
+}
+  
+html {
+    font-size: 14px; 
+}
+  body {
+    color: #bfc1c8;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    background: #1e202b; 
+}
+ul, ol 
+{
+    margin: 0;
+    padding-left: 0; /* no space from left */
+}
+a {
+    text-decoration: none;
+    color: #009ad8; 
+}
+  
+/*
+ * Header Styles
+ */
+ .site-header {
+    padding: 50px 0; 
+}
+.site-header .branding 
+{
+    float: left;
+ }
+ .site-header .branding .logo, .site-header .branding .logo-type 
+ {
+    display: inline-block;
+    vertical-align: middle; 
+}
+.site-header .branding .logo 
+{
+    margin-right: 10px; 
+}
+.site-header .branding .site-title {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-size: 1.1428571429em;
+    color: white; 
+}
+.site-header .branding .site-description {
+    font-size: 10px;
+    font-size: 0.7142857143em;
+    display: block;
+    color: #bfc1c8; 
+}
+
+.main-navigation
+ {
+    float: right; 
+}
+.main-navigation .menu-toggle, .main-navigation .menu
+ {
+    vertical-align: middle; 
+}
+/* MENU TOGGLE WHILE OPEARTING IN MOBILE */
+.main-navigation .menu-toggle {
+    background: none;
+    border: 2px solid transparent;
+    color: white;
+    padding: 20px;
+    border-radius: 40px;
+    -webkit-transition: .3s ease;
+            transition: .3s ease;
+    display: none;
+    outline: none; 
+}
+    @media screen and (max-width: 990px) 
+    {
+      .main-navigation .menu-toggle {
+        display: inline-block; 
+    } 
+}
+    .main-navigation .menu-toggle:hover, .main-navigation .menu-toggle:active {
+      border-color: #009ad8;
+      color: #009ad8; 
+    }
+    /* END */
+    .main-navigation .menu 
+    {
+        list-style: none;
+        display: inline-block;
+        *zoom: 1; 
+    }
+    .main-navigation .menu:after {
+        content: " ";
+        clear: both;
+        display: block;
+        overflow: hidden;
+        height: 0; 
+    }
+    @media screen and (max-width: 990px)
+     {
+        .main-navigation .menu 
+        {
+          display: none; 
+        }
+     }
+     /* CONTAINER STYLING */
+     .container 
+     {
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        *zoom: 1; 
+    }
+    .container:after
+     {
+        content: " ";
+        clear: both;
+        display: block;
+        overflow: hidden;
+        height: 0; 
+    }
+    @media (min-width: 768px) 
+    {
+        .container 
+        {
+          width: 750px; 
+        } 
+    }
+      @media (min-width: 992px)
+      {
+        .container 
+        {
+          width: 970px; 
+        } 
+    }
+      @media (min-width: 1200px)
+      {
+        .container 
+        {
+          width: 1170px; 
+        } 
+    }
+     /*IMPORTANT STYLING FOR UNORDERED LIST */
+     .main-navigation .menu .menu-item 
+     {
+        float: left;
+        margin-left: 10px;
+     }
+     .main-navigation .menu .menu-item a 
+     {
+        padding: 5px 25px;
+        border: 2px solid transparent;
+        border-radius: 30px;
+        color: white;
+        -webkit-transition: .3s ease;
+                transition: .3s ease;
+        font-weight: 400; 
+    }
+    .main-navigation .menu .menu-item.current-menu-item a, .main-navigation .menu .menu-item:hover a 
+    {
+        border-color: #009ad8;
+        color: #009ad8; 
+    }
+    .mobile-navigation 
+    {
+        padding: 30px 0 0;
+        clear: both;
+        display: none; 
+    }
+    @media screen and (min-width: 991px) 
+    {
+        .mobile-navigation 
+        {
+          display: none !important; 
+        }
+     }
+     .mobile-navigation .menu 
+     {
+        background: #262936;
+        list-style: none;
+        text-align: center;
+        border-radius: 10px;
+        overflow: hidden; 
+    }
+    .mobile-navigation .menu a 
+    {
+        padding: 20px;
+        display: block;
+        color: white; 
+    }
+    .mobile-navigation .menu .menu-item 
+    {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+    }
+    .mobile-navigation .menu .menu-item:last-child 
+    {
+        border-bottom: none; 
+    }
+    .mobile-navigation .menu .menu-item.current-menu-item a 
+    {
+        color: #009ad8; 
+    }
+    
