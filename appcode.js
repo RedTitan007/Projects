@@ -38,7 +38,7 @@ button.addEventListener('click',function(inputValue){
 function displayWeather(){
     if ('speechSynthesis' in window) {
     locationElement.innerHTML = `${weather.city}, ${weather.country}`;
-    var greetings = new SpeechSynthesisUtterance('Hai  Dude Todays Weather for '+weather.city+"  "+weather.country+"is");
+    var greetings = new SpeechSynthesisUtterance('Hai  Dude Todays Weather for '+weather.city+"  "+weather.country+" is ");
     window.speechSynthesis.speak(greetings);
 
     tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
